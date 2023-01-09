@@ -1,1 +1,118 @@
 /* You can add global styles to this file, and also import other style files */
+*,
+*::after,
+*::before{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Outfit', sans-serif;
+}
+body{
+    background-color: #10141E;
+    overflow-x: hidden;
+}
+.container{
+    width: 1440px;
+    max-width: 100%;
+    margin: auto;
+}
+
+.movie{
+    position: relative;
+    color: white;
+    width: fit-content;
+    width: 24%;
+    img{
+        width: 100%;      
+        max-height: 270px; 
+        object-fit: cover;
+        border-radius: 10px;
+    }
+    ul{
+        margin-top: 7px;
+        display: flex;
+        flex-direction: row;
+        bottom: 83px;
+        left: 30px;
+        column-gap: 30px;
+        font-weight: 300;
+        color: rgba(255, 255, 255, 0.767);
+        letter-spacing: 1px;
+        font-size: .9rem;
+        li:first-child{
+            list-style:none;
+        }
+    }
+
+    h3{
+        margin-top: 2px;
+        bottom: 40px;
+        left: 30px;
+        font-weight: 500;
+        font-size: 1.6rem;
+        letter-spacing: 1px;
+    }
+
+    figure{
+        position: absolute;
+        top: 30px;
+        right: 30px;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        background-color: rgba(0, 0, 0, 0.305);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        svg{
+            transform: scale(1.4);
+        }
+    }
+}
+
+@media only screen and (max-width:1542px) {
+    .movies-all{
+     left: 90px;
+    }
+ }
+
+ @media only screen and (max-width:1244px) {
+    .movies{
+        .movie{
+            width: 26% !important;
+        }
+    }
+}
+@media only screen and (max-width:1244px) {
+    .movies{
+        .movie{
+            width: 45% !important;
+        }
+    }
+}
+@media only screen and (max-width:768px) {
+    .movies-all{
+        left: -60px !important;
+        top: 140px;
+    }
+ }
+
+ @media only screen and (max-width:625px) {
+    .movies-all{
+     left: -20px !important;
+    }
+ }
+ @media only screen and (max-width:475px) {
+    .movies{
+        .movie{
+            width: 100% !important;
+        }
+    }
+}
+@media only screen and (max-width:768px) {
+    .search-side{
+        margin-top: 90px;
+    }
+}
+    

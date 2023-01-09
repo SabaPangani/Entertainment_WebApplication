@@ -1,0 +1,57 @@
+main{
+    .movies-all{
+        position: relative;
+        top: 50px;
+        .container{
+            width: 80%;
+            .row{
+                display: flex;
+                flex-direction: column;
+                row-gap: 40px;
+                .search-side{
+                    display: flex;
+                    flex-direction: row;
+                    column-gap: 20px;
+                    input{
+                        width: 100%;
+                        background: none;
+                        border: none;
+                        outline:  none;
+                        transition: .2s;
+                        color: white;
+                        cursor:var(--red) !important;
+                        font-size: 1.3rem;
+                        font-weight:300;
+                        letter-spacing: .5px;
+                        &:focus{
+                            border-bottom: 1px solid rgba(255, 255, 255, 0.386);
+                        }
+                        &::placeholder{
+                            font-weight: 300;
+                            font-size: 1.3rem;
+                        }
+                    }
+    
+                }
+
+                .all-movie{
+                    h1{
+                        font-weight: 300;
+                        font-size: 2.5rem;
+                        letter-spacing: 2px;
+                        color: white;
+                    }
+                    .movies{
+                        width: 88vw;
+                        margin-top: 30px;
+                        display: flex;
+                        flex-direction: row;
+                        flex-wrap:wrap;
+                        gap: 20px;
+                    }
+                }
+            }
+        }
+    }
+}
+

@@ -1,0 +1,46 @@
+:host{
+    --blue:#161D2F;
+    --dark-blue:#10141E;
+    --light-sky:#10141E;
+    --white:#FFFFFF;
+    --light-white:rgba(255, 255, 255, 0.767);
+    --red:#FC4747;
+}
+
+.bookmark {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.wrapper {
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius:100%;
+  cursor: pointer;
+  position: absolute;
+  top: 30px;
+  right: 30px;
+  .inner-mask {
+    position: absolute;
+    top: 56%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 100%;
+    height: 100%;
+    opacity: .5;
+    background: var(--dark-blue);
+    border-radius: 50%;
+  }
+
+  > img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    transform: scale(.45);
+  }
+
+  .inactive {
+    display: none;
+  }
+}
