@@ -1,5 +1,5 @@
 # EntertainmentApp
-Live url https://sabapangani.github.io/Entertainment_WebApplication/
+## Live url https://sabapangani.github.io/Entertainment_WebApplication/
 need to fix bookmarking logo bug
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.0.4.
 
