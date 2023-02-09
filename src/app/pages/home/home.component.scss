@@ -1,12 +1,10 @@
 :host{
     --blue:#161D2F;
     --dark-blue:#10141E;
-    --light-sky:#10141E;
     --white:#FFFFFF;
     --light-white:rgba(255, 255, 255, 0.767);
     --red:#FC4747;
 }
-
 
 .movies-all{
     position: relative;
@@ -55,8 +53,10 @@
                     margin-top: 30px;
                     display: flex;
                     flex-direction: row;
-                    overflow-x: hidden;
+                    overflow-x: scroll;
                     column-gap: 28px;
+                    padding-bottom: 10px;
+             
                     .movie{
                         position: relative;
                         color: white;
@@ -218,6 +218,7 @@
  }
 @media only screen and (max-width:625px) {
     .recommended-movies{
+        width: 110%;
         .movie{
             width: 100%;
         }

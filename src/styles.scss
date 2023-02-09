@@ -17,6 +17,26 @@ body{
     margin: auto;
 }
 
+
+         
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #00335896;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #161D2F;
+  }
+  
+  /* Handle on hover */
+  
+  
+
 .movie{
     position: relative;
     color: white;
